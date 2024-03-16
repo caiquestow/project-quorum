@@ -1,0 +1,38 @@
+# Arquivos de compilação
+*.pyc
+__pycache__/
+
+# Diretório do ambiente virtual
+venv/
+env/
+
+# Arquivo de banco de dados SQLite
+*.sqlite3
+
+# Arquivos de configuração local
+*.env
+*.ini
+*.conf
+
+# Arquivos de mídia gerados
+media/
+
+# Arquivos de logs
+logs/
+
+# Arquivos de cache
+*.log
+*.pot
+*.pyo
+*.swp
+
+# Arquivos temporários
+*~
+
+# Arquivos de IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Dependências
+node_modules/
