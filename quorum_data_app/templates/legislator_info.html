@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legislator Information</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Legislator Information</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Legislator</th>
+                <th>Number of Supported Bills</th>
+                <th>Number of Opposed Bills</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for legislator_id, legislator_info in legislators_data.items %}
+            <tr>
+                <td>{{ legislator_info.name }}</td>
+                <td>{{ legislator_info.supported_bills }}</td>
+                <td>{{ legislator_info.opposed_bills }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
