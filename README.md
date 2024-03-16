@@ -19,7 +19,7 @@ cd project-quorum/backend
 1. Start the Django development server:
 
 ```bash
-python manage.py runserver
+python3 manage.py runserver
 ```
 
 2. Open a web browser and go to `http://127.0.0.1:8000/` to access the web application.
